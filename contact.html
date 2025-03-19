@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <nav>
+        <div class="nav__content">
+            <div class="logo"><a href="#">Portfolio</a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html" class="active">Projects</a></li>
+                <li><a href="achievement.html">Achievements</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="content">
+            <div class="left-side">
+                <div class="address details">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="topic">Address</div>
+                    <div class="text-two">BIT, Sathyamagalam</div>
+                </div>
+                <div class="phone details">
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="topic">Phone</div>
+                    <div class="text-one">9360089879</div>
+                </div>
+                <div class="email details">
+                    <i class="fas fa-envelope"></i>
+                    <div class="topic">Email</div>
+                    <div class="text-one">SELVAPRADEEP.IT22@ac.in</div>
+                    <div class="text-two">SELVAPRADEEP777@GMAIL.COM</div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="topic-text">Send us a message</div>
+                <p>If you are looking for a dedicated and skilled developer to contribute to your projects, I would love to connect. I am eager to bring my programming expertise and problem-solving abilities to your team, helping to drive innovation and achieve your business objectives. Your success is my priority, and I look forward to the opportunity to collaborate with you and contribute to your company's growth.</p>
+                <form id="contactForm">
+                    <div class="input-box">
+                        <input type="text" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-box message-box">
+                        <textarea name="message" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <div class="button">
+                        <button type="submit">Send Now</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const formData = {
+                name: document.querySelector('input[name="name"]').value,
+                email: document.querySelector('input[name="email"]').value,
+                message: document.querySelector('textarea[name="message"]').value
+            };
+
+            fetch("https://formspree.io/f/mgvavrer", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert("Message sent successfully!");
+                document.getElementById("contactForm").reset();
+            })
+            .catch(error => {
+                alert("Error sending message.");
+            });
+        });
+    </script>
+</body>
+</html>

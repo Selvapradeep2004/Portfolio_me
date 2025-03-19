@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  --primary-color: #2c88bdbe;
+  --primary-color-dark: #9333ea;
+  --secondary-color: #5117d8;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --extra-light: #faf5ff;
+  --max-width: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navigation Bar */
+nav {
+  background: #222;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.nav__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.nav__content .logo a {
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav__content ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav__content ul li {
+  display: inline;
+}
+
+.nav__content ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  transition: 0.3s;
+}
+
+.nav__content ul li a:hover, .nav__content ul li a.active {
+  border-radius: 5px;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  transition: left 0.3s;
+}
+
+ul li a {
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text-dark);
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  border-top-color: var(--secondary-color);
+  border-bottom-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  text-align: center;
+}
+
+header {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a36d4;
+  margin-bottom: 20px;
+}
+
+/* Section Container */
+section {
+  max-width: 800px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Headings */
+section h2 {
+  font-size: 1.8rem;
+  color: #e27328;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #1a36d4;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Subheadings */
+section h3 {
+  font-size: 1.5rem;
+  color: #1a36d4;
+  margin-bottom: 10px;
+}
+
+/* Paragraph Styling */
+section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Container: 2x2 Grid Layout */
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Box Styling */
+.box {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  border-left: 6px solid #3e2093; /* Deep purple accent */
+  transition: transform 0.2s ease-in-out;
+}
+
+.box:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Table Styling for Structured Look */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+td:first-child {
+  font-weight: bold;
+  background-color: #efe6ff; /* Light purple for clarity */
+  color: #3e2093; /* Deep purple text */
+}
+
+/* Responsive Design: Switch to Single Column on Small Screens */
+@media (max-width: 768px) {
+  .container {
+      grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #f6f1f1;
+  color: rgb(26, 25, 25);
+  padding: 10px 0;
+  margin-top: 20px;
+}
+

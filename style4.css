@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  --primary-color: #2c88bdbe;
+  --primary-color-dark: #9333ea;
+  --secondary-color: #5117d8;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --extra-light: #faf5ff;
+  --max-width: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+
+/* Navigation Bar */
+nav {
+  background: #222;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.nav__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.nav__content .logo a {
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav__content ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav__content ul li {
+  display: inline;
+}
+
+.nav__content ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  transition: 0.3s;
+}
+
+.nav__content ul li a:hover, .nav__content ul li a.active {
+
+  border-radius: 5px;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  transition: left 0.3s;
+}
+
+ul li a {
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text-dark);
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  border-top-color: var(--secondary-color);
+  border-bottom-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.projects {
+    background: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.projects-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Grid Layout */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Project Card Box */
+.project-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.03);
+}
+
+.project-img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.project-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 15px 0 10px;
+    color: #222;
+}
+
+.project-description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.tech-stack {
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #3e2093;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #412e8d;
+}
+
+
+

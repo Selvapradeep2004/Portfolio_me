@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  --primary-color: #2c88bdbe;
+  --primary-color-dark: #9333ea;
+  --secondary-color: #5117d8;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --extra-light: #faf5ff;
+  --max-width: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navigation Bar */
+nav {
+  background: #222;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.nav__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.nav__content .logo a {
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav__content ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav__content ul li {
+  display: inline;
+}
+
+.nav__content ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  transition: 0.3s;
+}
+
+.nav__content ul li a:hover, .nav__content ul li a.active {
+  border-radius: 5px;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  transition: left 0.3s;
+}
+
+ul li a {
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text-dark);
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  border-top-color: var(--secondary-color);
+  border-bottom-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  text-align: center;
+}
+
+header {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a36d4;
+  margin-bottom: 20px;
+}
+
+/* Achievements Section */
+.section__container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Title Styling */
+.section__container h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #3e2093;
+    margin-bottom: 30px;
+}
+
+/* Achievement Section */
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.achievement {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.achievement:hover {
+    transform: scale(1.05);
+}
+
+/* Certificate Container */
+.certificate-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.certificate-container img {
+    width: 100%;
+    max-width: 350px; /* Bigger certificates */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.certificate-container img:hover {
+    transform: scale(1.1);
+}
+
+/* Download Button */
+.download-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #3e2093;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease-in-out;
+}
+
+.download-btn i {
+    margin-right: 8px;
+}
+
+.download-btn:hover {
+    background: #412e8d;
+    transform: scale(1.1);
+}
+
+
