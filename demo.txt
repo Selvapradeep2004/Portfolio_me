@@ -1,2 +1,2 @@
 index.html->To run.
-index.html->style.css
+index.html->style.css -> To change layout and color
